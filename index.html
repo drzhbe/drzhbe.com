@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<title>parallax</title>
+<style>
+	body {
+		margin: 0;
+	}
+
+	.l0 {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		background-color: black;
+		font-size: 40px;
+	}
+		.l0 .bg {
+			background-attachment: fixed;
+			background-size: cover;
+			height: 100vh;
+		}
+		.l0 .filter {
+			background: black;
+			opacity: 0.4;
+			height: 100vh;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+		.l0 .content {
+			text-align: center;
+			color: white;
+			position: absolute;
+			top: 50%;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+		.l0 .video {
+			/*position: fixed;*/
+		}
+
+	.l1 {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		font-size: 40px;
+	}
+
+		.l1 .content {
+			/*position: fixed;*/
+		}
+
+
+	.cont {
+		position: absolute;
+		top: 50%;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		color: white;
+	}
+	._fixed {
+		position: fixed;
+		top: 0;
+	}
+</style>
+
+<div id='main'>
+	<div class='l0'>
+		<div class='bg' style="background-image: url(img/chekhov-chaika.jpg)"></div>
+		<div class='content'>Читальня</div>
+	</div>
+
+	<div class='l0 _video' data-name='jap_sea'>
+		<div class='video-wrap'>
+			<video src='video/jap_sea.webm' class='' preload="true" loop="true" muted="true" width="100%"></video>
+			<div class='content'>Владивосток, Японское море</div>
+		</div>
+	</div>
+
+	<div class='l0 _video' data-name='vladivostok-night'>
+		<div class='video-wrap'>
+			<video src='video/vladivostok-night.webm' class='' preload="true" loop="true" muted="true" width="100%"></video>
+			<div class='content'>Владивосток, ночь приезда</div>
+		</div>
+	</div>
+
+	<div class='l0'>
+		<div class='bg' style="background-image: url(img/boat.jpg)"></div>
+		<div class='content' style='font-size: 18px; top: 15%; left: 70%; right: 5%;'>Корабль нашего путешествия остановился на земле иркутской. Мы сняли квартиру на месяц, подписали договор с тараканами, вымываем новый домик.</div>
+		<div class='content' style='font-size: 18px; top: 35%; left: 70%; right: 5%;'>"Велосипедист движется из точки А в точку Б с такой-то скоростью, расстояние такое-то. За какое время он доберётся до точки Б? С первого взгляда простая задачка. Но мало ли что может произойти по пути? Например, он может влюбиться"</div>
+	</div>
+
+	<div class='l0 _video' data-name='cave'>
+		<div class='video-wrap'>
+			<video src='video/cave.webm' class='' preload="true" loop="true" muted="true" width="100%"></video>
+			<div class='filter'></div>
+			<div class='content'>Остров Ольхон, Байкал</div>
+		</div>
+	</div>
+
+	<div class='l0'>
+		<div class='bg' style="background-image: url(img/dead-boat.jpg)"></div>
+		<div class='content'>То самое кладбище кораблей на Ольхоне, рядом с мертвым же рыбзаводом. Тела кораблей красиво татуированы</div>
+	</div>
+
+	<div class='l0 _video' data-name='flower'>
+		<div class='video-wrap'>
+			<video src='video/flower.webm' class='' preload="true" loop="true" muted="true" width="100%"></video>
+			<div class='content'>Остров Ольхон, Байкал</div>
+		</div>
+	</div>
+
+	<div class='l0'>
+		<div class='bg' style="background-image: url(img/kuraga-universe.jpg)"></div>
+		<div class='content' style='top: 40%; left: 80%;'>Забыли чай, поэтому заварили вселенную</div>
+		<!-- <div class='content' style='top: 30%; left: 75%;'>поэтому</div>
+		<div class='content' style='top: 35%; left: 75%;'>заварили вселенную</div> -->
+	</div>
+
+	<div class='l0'>
+		<div class='bg' style="background-image: url(img/pier-dano.jpg)"></div>
+		<!-- <div class='filter'></div> -->
+		<div class='content'>Мир</div>
+	</div>
+
+	<div class='l0'>
+		<div class='bg' style="background-image: url(img/barn.jpg)"></div>
+		<div class='content'>❤</div>
+	</div>
+
+	<div class='l0 _video' data-name='rocks-2'>
+		<div class='video-wrap'>
+			<video src='video/rocks-2.webm' class='' preload="true" loop="true" muted="true" width="100%"></video>
+			<div class='cont' style='left: 10%;'>Владивосток</div>
+			<div class='cont' style='left: 45%; color: #777;'>Японское море</div>
+			<div class='cont' style='left: 75%;'>Русский остров</div>
+		</div>
+	</div>
+
+	<div class='l0 _video' data-name='tree'>
+		<div class='video-wrap'>
+			<video src='video/tree.webm' class='' preload="true" loop="true" muted="true" width="100%"></video>
+			<!-- <div class='content'>Остров Ольхон, Байкал</div> -->
+			<div class='cont' style='left: 10%;'>Остров Ольхон</div>
+			<div class='cont' style='left: 75%;'>Байкал</div>
+		</div>
+	</div>
+
+	<div class='l0'>
+		<div class='bg' style="background-image: url(img/piece-of-tree.jpg)"></div>
+		<div class='content' style='left: 75%; color: #eee; font-size: 100px'>Конец</div>
+	</div>
+
+	<div class='l0'>
+		<div class='bg' style="background-image: url(img/stanczyk.jpg)"></div>
+		<div class='content'>Закулисье</div>
+	</div>
+</div>
+
+<script src='app.js'></script>
+<!-- <script src='jquery-3.2.1.min.js'></script> -->
+</html>
